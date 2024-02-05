@@ -36,13 +36,17 @@ _Write a summary of your project._
 # Introduction 
 
 ## General Background Information
-_Provide enough background on your topic that others can understand the why and how of your analysis_ 
+
+Understanding the link between alcohol consumption and TB infection is crucial for public health, as alcohol may influence the immune system and increase susceptibility to infectious diseases. Similar analyses have been conducted in different populations, but this study in Kampala, Uganda, provides valuable insights into a region with unique characteristics and challenges.
 
 ## Description of data and data source
-_Describe what the data is, what it contains, where it is from, etc. Eventually this might be part of a methods section._
+
+The data comes from an going prospective cohort study conducted in Kampala, Uganda, involving 902 adults aged 15 to 65 years without evidence of previous infection with Mycobacterium tuberculosis (Mtb). The participants were recruited through community tuberculin skin test (TST) surveys and HIV/TB Care Clinics. Data collection included baseline evaluations, quarterly follow-ups for up to 18 months, questionnaires on TB exposure and alcohol consumption, and blood samples for Interferon Gamma Release Assay (IGRA) testing.
 
 ## Questions/Hypotheses to be addressed
-_State the research questions you plan to answer with this analysis._
+What is the association between demographic factors and incidence of latent TB infection?
+
+What is the relationship between alcohol consumption and the incidence of latent TB infection?
 
 To cite other work (important everywhere, but likely happens first in introduction), make sure your references are in the bibtex file specified in the YAML header above (here `dataanalysis_template_references.bib`) and have the right bibtex key. Then you can include like this:
 
