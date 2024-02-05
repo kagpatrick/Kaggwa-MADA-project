@@ -1,5 +1,5 @@
 ---
-title: "Example Manuscript Template for a Data Analysis Project"
+title: "Assessing of the relationship between Alcohol consumption and Latent TB in Kampala"
 subtitle: ""
 author: Andreas Handel
 date: "`r Sys.Date()`"
