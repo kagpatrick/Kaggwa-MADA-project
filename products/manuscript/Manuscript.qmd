@@ -1,8 +1,8 @@
 ---
 title: "Assessing of the relationship between Alcohol consumption and Latent TB in Kampala"
 subtitle: ""
-author: Andreas Handel
-date: "`r Sys.Date()`"
+author: Patrick Kaggwa
+date: "2024-02-24"
 format:
   docx:
     toc: false
@@ -71,7 +71,7 @@ We store those figures in the `assets` folder.
 #| label: fig-schematic
 #| fig-cap: "A figure that is manually generated and shows some overview/schematic. This has nothing to do with the data, it's just a random one from one of our projects I found and placed here."
 #| echo: FALSE
-knitr::include_graphics(here("products","assets","antigen-recognition.png"))
+#knitr::include_graphics(here("products","assets","antigen-recognition.png"))
 ```
 
 
@@ -124,7 +124,7 @@ _To get some further insight into your data, if reasonable you could compute sim
 #| label: fig-result
 #| fig-cap: "Height and weight stratified by gender."
 #| echo: FALSE
-knitr::include_graphics(here("results","height-weight-stratified.png"))
+#knitr::include_graphics(here("results","height-weight-stratified.png"))
 ```
 
 
@@ -138,8 +138,8 @@ Example @tbl-resulttable2 shows a summary of a linear model fit.
 #| label: tbl-resulttable2
 #| tbl-cap: "Linear model fit table."
 #| echo: FALSE
-resulttable2 = readRDS(here("results","tables-files","resulttable2.rds"))
-knitr::kable(resulttable2)
+#resulttable2 = readRDS(here("results","tables-files","resulttable2.rds"))
+#knitr::kable(resulttable2)
 ```
 
 
