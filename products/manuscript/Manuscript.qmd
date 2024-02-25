@@ -116,9 +116,8 @@ Sometimes you might want to show a schematic diagram/figure that was not created
 # Results
 
 ## Exploratory/Descriptive analysis
-
-we used histograms, bar graphs, and box plots, to show how data was distributed.We did cross tabulation between the covariates and the outcome to the proportionss of each.
-
+Data analysis was conducted using R Studio version RStudio 2023.09.1. Descriptive statistics (frequencies, mean, standard deviation (SD), median, interquartile range (IQR), and proportions) were used to present the baseline characteristics of participants.
+we used histograms, bar graphs, and box plots, to show how data was distributed.We did cross tabulation between the covariates and the outcome.
 
 ```{r}
 #| label: tbl-summarytable
