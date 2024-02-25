@@ -39,11 +39,13 @@ options(warn = defaultW)
 
 ```{r}
 #Path to data. Note the use of the here() package and not absolute paths
-data_location <- here::here("data","processed_data","processeddata.rds")
+data_location <- here::here("data","raw-data","processeddata.rds")
+
 #load data
 # Loading the needed datasets
-madaproject <- read_excel("~/OneDrive - University of Georgia/Documents/CLASSES-PHD/SEM2 YEAR 1/EPID8060E/part 2 MADA/data_patrick.xlsx")
-tst <- read_csv("~/OneDrive - University of Georgia/Documents/CLASSES-PHD/SEM2 YEAR 1/EPID8060E/part 2 MADA/TST_Placement.csv")
+madaproject <- read_excel("data_patrick.xlsx")
+
+tst <- suppressWarnings(read_csv("TST_Placement.csv", show_col_types = FALSE))
 ```
 
 ## Data cleaning & manipulation
@@ -203,11 +205,14 @@ finaldata <- finaldata %>% mutate(agecat = ifelse(age >= 0 & age <= 20, 0,
 ```
 
 ```{r}
-# Create the  table
-# Subset the first 10 rows of finaldata
-subset_data <- finaldata[1:10, ]
-
-# Convert to flextable
-flex_table <- flextable(subset_data)
-flex_table 
+# Create the  crosstabulation
+tb1 <- table(finaldata$sex, finaldata$ltbi)
+tb2 <- table(finaldata$agecat, finaldata$ltbi)
+tb3 <- table(finaldata$alcohol_consumption, finaldata$ltbi)
+tb4 <- table(finaldata$hiv_status, finaldata$ltbi)
+tb1 
+tb2 
+tb3 
+tb4
+ 
 ```
