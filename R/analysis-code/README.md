@@ -1,12 +1,21 @@
-This folder contains code to do some simple exploratory analysis on the processed/cleaned data.
-The code produces a few tables and figures, which are saved in the `results` folder.
+This folder contains a  data-set in an Excel file.
 
-It's the same code done 3 times:
+It contains the variables `"sex", "inc" , "age_yrs" , "Drinkst1tus" ,"tst2b"       
+[6] "enr_compdate", "last_date"  .
 
-* First, there is an R script that you can run which does all the computations.
-* Second, there is a Quarto file which contains exactly the same code as the R script.
-* Third, my current favorite, is a Quarto file with an approach where the code is pulled in from the R script and run.
+sex: This variable represents the biological sex or gender of individuals in the dataset. The value "1" typically corresponds to "Male", while "2" corresponds to "Female".
 
-The last version has the advantage of having code in one place for easy writing/debugging, and then being able to pull the code into the Quarto file for a nice combination of text/commentary and code.
+inc: This variable represents the number of TB infections. A value of "1" indicates a positive TB infection, while "0" indicates a negative TB infection status.
 
-Each way of doing this is a reasonable approach, pick whichever one you prefer or makes the most sense for your setup. Whichever approach you choose, add ample documentation/commentary so you and others can easily understand what's going on and what is done.
+age_yrs: This variable represents the age of individuals in complete years at the time of data collection.
+
+Drinkst1tus: This variable represents alcohol consumption status. A value of "1" indicates that the individual consumes alcohol, while "0" indicates that they do not.
+
+tst2b: This variable represents HIV status. A value of "1" typically indicates a positive HIV status, "2" indicates a negative HIV status, and "9" indicates that the HIV status is unknown.
+
+enr_compdate: This variable represents the enrollment date for participants in the study. It indicates when individuals were enrolled or completed their enrollment.
+
+last_date: This variable represents the date of conversion. It indicates the date when a specific event or outcome occurred, potentially related to the study's objectives.
+
+
+
