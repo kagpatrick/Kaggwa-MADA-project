@@ -12,9 +12,6 @@ bibliography: ../assets/dataanalysis-references.bib
 csl: ../assets/apa.csl
 ---
 
-The structure below is one possible setup for a data analysis project (including the course project). For a manuscript, adjust as needed. You don't need to have exactly these sections, but the content covering those sections should be addressed.
-
-This uses MS Word as output format. [See here](https://quarto.org/docs/output-formats/ms-word.html) for more information. You can switch to other formats, like html or pdf. See [the Quarto documentation](https://quarto.org/) for other formats.
 
 ```{r, echo=FALSE, message=FALSE}
 # load a few R packages
@@ -29,7 +26,8 @@ library(knitr)
 {{< pagebreak >}}
 
 # Introduction
-
+The global burden of tuberculosis (TB) is high and it is the world’s second leading cause of death from a single infectious agent, after coronavirus disease@WHO2023. It reached its peak in 2000 and has since declined by a modest 1.5% annually, falling short of the Millennial Development Goals for TB elimination by 2035. Despite efforts carried out it’s still a challenge, one-quarter of the world’s population is infected with Latent TB(LTBI)@Houben2016. Uganda is one of the highest sub-Saharan countries with a prevalence of TB 764/100,000 persons in the past two years@WHO2023. It is not feasible to treat all individuals with LTBI, so strategies have been developed to identify factors associated with LTBI and they should be identified and dealt with to reduce the risk for progressing to TB disease. Currently, Uganda’s goal is the identify TB cases and provide treatment but does not track LTBI in the community hence remaining a big burden to the country@Alcover2022@Felix@Muyindike.
+In the broader context of TB research, a growing body of literature explores various risk factors influencing the progression from LTBI to active disease@Yap2018. The aim is to assess the association between alcohol consumption and the risk of developing LTBI. As global drug use and alcohol consumption have increased and TB remains important, understanding the risk between these two factors holds major implications for public health strategies and interventions@Nwana2019.
 ## General Background Information
 
 Understanding the link between alcohol consumption and TB infection is crucial for public health, as alcohol may influence the immune system and increase susceptibility to infectious diseases. Similar analyses have been conducted in different populations, but this study in Kampala, Uganda, provides valuable insights into a region with unique characteristics and challenges.
@@ -64,11 +62,11 @@ The study was conducted in the Kawempe and Rubaga Divisions of Kampala, and cont
 
 ### Inclusion 
 
-No evidence of Mtb infection TST \< 5 mm QFT negative Asymptomatic for symptoms of active TB
+No evidence of Mtb infection TST < 5 mm QFT negative Asymptomatic for symptoms of active TB
 
 ### Exclusion
 
-Children, residents \< 15 years Active or subclinical TB Previously treated for TB Previously treated for LTBI and Immunosuppresive medication
+Children, residents < 15 years Active or subclinical TB Previously treated for TB Previously treated for LTBI and Immunosuppresive medication
 
 **Recruitment, Screening, and Enrollment** 
 The study participants were be recruited through community TST surveys and HIV/TB Care
@@ -78,9 +76,9 @@ signing an informed consent for screening, prospective participant completed a s
 local health care system, whereas the remaining individuals proceeded with screening. Among
 those not excluded, a baseline blood sample was taken for testing with an IGRA. Only after taking
 the blood sample, a TST was placed and read by the field team between 48 and 72 hours later.
-Those screened with a TST \< 5 mm continued in the study, whereas those with TST ≥ 5 mm were
+Those screened with a TST < 5 mm continued in the study, whereas those with TST ≥ 5 mm were
 referred to the local health care system for further TB risk evaluation and TB preventive therapy
-(TPT) as indicated. Participants with a TST \< 5 mm and negative IGRA met all study criteria
+(TPT) as indicated. Participants with a TST < 5 mm and negative IGRA met all study criteria
 continued in the study (Figure 1) for the duration of follow-up.
 Follow-up evaluations were performed quarterly up to 18 months. During these visits, field
 workers measured current exposure risk to M. tuberculosis, signs and symptoms of active TB
@@ -176,7 +174,6 @@ This paper [@leek2015] discusses types of analyses.
 
 These papers [@mckay2020; @mckay2020a] are good examples of papers published using a fully reproducible setup similar to the one shown in this template.
 
-Note that this cited reference will show up at the end of the document, the reference formatting is determined by the CSL file specified in the YAML header. Many more style files for almost any journal [are available](https://www.zotero.org/styles). You also specify the location of your bibtex reference file in the YAML. You can call your reference file anything you like, I just used the generic word `references.bib` but giving it a more descriptive name is probably better.
 
 {{< pagebreak >}}
 
