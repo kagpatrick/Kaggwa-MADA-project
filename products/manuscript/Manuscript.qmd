@@ -26,7 +26,7 @@ library(knitr)
 
 # Introduction
 
-The global burden of tuberculosis (TB) is high and it is the world's second leading cause of death from a single infectious agent, after coronavirus disease@WHO2023. It reached its peak in 2000 and has since declined by a modest 1.5% annually, falling short of the Millennial Development Goals for TB elimination by 2035. Despite efforts carried out it's still a challenge, one-quarter of the world's population is infected with Latent TB(LTBI)@Houben2016. Uganda is one of the highest sub-Saharan countries with a prevalence of TB 764/100,000 persons in the past two years@WHO2023. It is not feasible to treat all individuals with LTBI, so strategies have been developed to identify factors associated with LTBI and they should be identified and dealt with to reduce the risk for progressing to TB disease. Currently, Uganda's goal is the identify TB cases and provide treatment but does not track LTBI in the community hence remaining a big burden to the country@Alcover2022@Felix@Muyindike. In the broader context of TB research, a growing body of literature explores various risk factors influencing the progression from LTBI to active disease@Yap2018. The aim is to assess the association between alcohol consumption and the risk of developing LTBI. As global drug use and alcohol consumption have increased and TB remains important, understanding the risk between these two factors holds major implications for public health strategies and interventions@Nwana2019. 
+The global burden of tuberculosis (TB) is high and it is the world's second leading cause of death from a single infectious agent, after coronavirus disease\@WHO2023. It reached its peak in 2000 and has since declined by a modest 1.5% annually, falling short of the Millennial Development Goals for TB elimination by 2035. Despite efforts carried out it's still a challenge, one-quarter of the world's population is infected with Latent TB(LTBI)@Houben2016. Uganda is one of the highest sub-Saharan countries with a prevalence of TB 764/100,000 persons in the past two years\@WHO2023. It is not feasible to treat all individuals with LTBI, so strategies have been developed to identify factors associated with LTBI and they should be identified and dealt with to reduce the risk for progressing to TB disease. Currently, Uganda's goal is the identify TB cases and provide treatment but does not track LTBI in the community hence remaining a big burden to the country\@Alcover2022\@Felix\@Muyindike. In the broader context of TB research, a growing body of literature explores various risk factors influencing the progression from LTBI to active disease\@Yap2018. The aim is to assess the association between alcohol consumption and the risk of developing LTBI. As global drug use and alcohol consumption have increased and TB remains important, understanding the risk between these two factors holds major implications for public health strategies and interventions\@Nwana2019.
 
 ## General Background Information
 
@@ -96,6 +96,22 @@ Data analysis was conducted using R Studio version RStudio 2023.09.1. Descriptiv
 #| echo: FALSE
 resulttable=readRDS("../../results/summarytable.rds")
 knitr::kable(resulttable)
+```
+
+Looking at Age distribution
+
+```{r}
+knitr::include_graphics(here("results","age_distribution.png"))
+```
+
+Now I will at the box plot of TB infection and Age
+
+```{r}
+knitr::include_graphics(here("results","ltbi_age.png"))
+```
+Now I will look at Alcohol Consumption and Tb Infection
+```{r}
+knitr::include_graphics(here("results","alcohol consumption_ltbi_stacked.png"))
 ```
 
 ## Basic statistical analysis
