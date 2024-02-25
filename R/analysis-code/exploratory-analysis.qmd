@@ -146,7 +146,25 @@ summarytable_file = here("results", "summarytable.rds")
 saveRDS(summary_df, file = summarytable_file)
 ```
 
+
 ## Data exploration through figures
+
+```{r}
+ library(dplyr)
+
+# Compute summaries of the age variable in the finaldata dataset
+
+age_summary <- summarise(finaldata,  # Use the summarise() function from dplyr
+                mean_age = mean(age, na.rm = TRUE),  # Compute the mean age
+                median_age = median(age, na.rm = TRUE),  # Compute the median age
+                min_age = min(age, na.rm = TRUE),  # Find the minimum age
+                max_age = max(age, na.rm = TRUE),  # Find the maximum age
+                sd_age = sd(age, na.rm = TRUE))  # Calculate the standard deviation of age
+age_summary
+
+ 
+```
+
 
 ```{r}
 p1 <- finaldata %>% ggplot(aes(x=age)) + geom_histogram() 

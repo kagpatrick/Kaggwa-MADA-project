@@ -88,22 +88,6 @@ disease. At each visit, blood samples was taken at each visit for immunologic an
 Questionnaires were used to collect relevant data on demographics, health status, and overall
 experiences. Questionnaires were completed in-person or via phone.
 
-				
-
-			
-
-		
-
-	
-
-				
-
-			
-
-		
-
-	
-
 ## Schematic of workflow
 
 Sometimes you might want to show a schematic diagram/figure that was not created with code (if you can do it with code, do it). @fig-schematic is an example of some - completely random/unrelated - schematic that was generated with Biorender. We store those figures in the `assets` folder.
@@ -133,11 +117,8 @@ Sometimes you might want to show a schematic diagram/figure that was not created
 
 ## Exploratory/Descriptive analysis
 
-*Use a combination of text/tables/figures to explore and describe your data. Show the most important descriptive results here. Additional ones should go in the supplement. Even more can be in the R and Quarto files that are part of your project.*
+we used histograms, bar graphs, and box plots, to show how data was distributed.We did cross tabulation between the covariates and the outcome to the proportionss of each.
 
-@tbl-summarytable shows a summary of the data.
-
-Note the loading of the data providing a **relative** path using the `../../` notation. (Two dots means a folder up). You never want to specify an **absolute** path like `C:\ahandel\myproject\results\` because if you share this with someone, it won't work for them since they don't have that path. You can also use the `here` R package to create paths. See examples of that below.
 
 ```{r}
 #| label: tbl-summarytable
