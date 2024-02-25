@@ -12,7 +12,6 @@ bibliography: ../assets/dataanalysis-references.bib
 csl: ../assets/apa.csl
 ---
 
-
 ```{r, echo=FALSE, message=FALSE}
 # load a few R packages
 library(here)
@@ -26,8 +25,9 @@ library(knitr)
 {{< pagebreak >}}
 
 # Introduction
-The global burden of tuberculosis (TB) is high and it is the world’s second leading cause of death from a single infectious agent, after coronavirus disease@WHO2023. It reached its peak in 2000 and has since declined by a modest 1.5% annually, falling short of the Millennial Development Goals for TB elimination by 2035. Despite efforts carried out it’s still a challenge, one-quarter of the world’s population is infected with Latent TB(LTBI)@Houben2016. Uganda is one of the highest sub-Saharan countries with a prevalence of TB 764/100,000 persons in the past two years@WHO2023. It is not feasible to treat all individuals with LTBI, so strategies have been developed to identify factors associated with LTBI and they should be identified and dealt with to reduce the risk for progressing to TB disease. Currently, Uganda’s goal is the identify TB cases and provide treatment but does not track LTBI in the community hence remaining a big burden to the country@Alcover2022@Felix@Muyindike.
-In the broader context of TB research, a growing body of literature explores various risk factors influencing the progression from LTBI to active disease@Yap2018. The aim is to assess the association between alcohol consumption and the risk of developing LTBI. As global drug use and alcohol consumption have increased and TB remains important, understanding the risk between these two factors holds major implications for public health strategies and interventions@Nwana2019.
+
+The global burden of tuberculosis (TB) is high and it is the world's second leading cause of death from a single infectious agent, after coronavirus disease@WHO2023. It reached its peak in 2000 and has since declined by a modest 1.5% annually, falling short of the Millennial Development Goals for TB elimination by 2035. Despite efforts carried out it's still a challenge, one-quarter of the world's population is infected with Latent TB(LTBI)@Houben2016. Uganda is one of the highest sub-Saharan countries with a prevalence of TB 764/100,000 persons in the past two years@WHO2023. It is not feasible to treat all individuals with LTBI, so strategies have been developed to identify factors associated with LTBI and they should be identified and dealt with to reduce the risk for progressing to TB disease. Currently, Uganda's goal is the identify TB cases and provide treatment but does not track LTBI in the community hence remaining a big burden to the country@Alcover2022@Felix@Muyindike. In the broader context of TB research, a growing body of literature explores various risk factors influencing the progression from LTBI to active disease@Yap2018. The aim is to assess the association between alcohol consumption and the risk of developing LTBI. As global drug use and alcohol consumption have increased and TB remains important, understanding the risk between these two factors holds major implications for public health strategies and interventions@Nwana2019. 
+
 ## General Background Information
 
 Understanding the link between alcohol consumption and TB infection is crucial for public health, as alcohol may influence the immune system and increase susceptibility to infectious diseases. Similar analyses have been conducted in different populations, but this study in Kampala, Uganda, provides valuable insights into a region with unique characteristics and challenges.
@@ -42,60 +42,33 @@ What is the association between demographic factors and incidence of latent TB i
 
 What is the relationship between alcohol consumption and the incidence of latent TB infection?
 
-To cite other work (important everywhere, but likely happens first in introduction), make sure your references are in the bibtex file specified in the YAML header above (here `dataanalysis_template_references.bib`) and have the right bibtex key. Then you can include like this:
-
-Examples of reproducible research projects can for instance be found in [@mckay2020; @mckay2020a].
-
 {{< pagebreak >}}
 
 # Methods
 
-## Study Design 
+## Study Design
 
 A prospective cohort study of 902 adults from the Kawempe and Rubaga divisions of Kampala, Uganda, without evidence for previous infection with Mtb, to estimate the incidence of Mtb infection. Eligible residents who are between the ages of 15 and 65 years were enrolled following informed consent. Study participants were evaluated at baseline then followed quarterly for up to 18 months. During the quarterly visits, participants completed questionnaires regarding exposure to TB, alcohol consumption, and gave a blood sample for Interferon Gamma Release Assay (IGRA) testing.
 
-## Study Population and Setting 
+## Study Population and Setting
 
 The study was conducted in the Kawempe and Rubaga Divisions of Kampala, and contiguous parishes. The total population of Rubaga is approximately 383,216 people based on a 2014 census. Kawempe is adjacent to Rubaga. It comprises 19 parishes and 740 villages that are political units headed by a Local Council
 
 ## Inclusion and Exclusion Criteria
 
-### Inclusion 
+### Inclusion
 
-No evidence of Mtb infection TST < 5 mm QFT negative Asymptomatic for symptoms of active TB
+No evidence of Mtb infection TST \< 5 mm QFT negative Asymptomatic for symptoms of active TB
 
 ### Exclusion
 
-Children, residents < 15 years Active or subclinical TB Previously treated for TB Previously treated for LTBI and Immunosuppresive medication
+Children, residents \< 15 years Active or subclinical TB Previously treated for TB Previously treated for LTBI and Immunosuppresive medication
 
-**Recruitment, Screening, and Enrollment** 
-The study participants were be recruited through community TST surveys and HIV/TB Care
-Clinics in the catchment area. The enrollment into the study involved a 2-step process of screening
-then enrollment (Figure 1). A separate consent form was signed for each step in this process. After
-signing an informed consent for screening, prospective participant completed a short questionnaire to determine exclusionary criteria. Those that met any exclusionary criteria were referred to the
-local health care system, whereas the remaining individuals proceeded with screening. Among
-those not excluded, a baseline blood sample was taken for testing with an IGRA. Only after taking
-the blood sample, a TST was placed and read by the field team between 48 and 72 hours later.
-Those screened with a TST < 5 mm continued in the study, whereas those with TST ≥ 5 mm were
-referred to the local health care system for further TB risk evaluation and TB preventive therapy
-(TPT) as indicated. Participants with a TST < 5 mm and negative IGRA met all study criteria
-continued in the study (Figure 1) for the duration of follow-up.
-Follow-up evaluations were performed quarterly up to 18 months. During these visits, field
-workers measured current exposure risk to M. tuberculosis, signs and symptoms of active TB
-disease. At each visit, blood samples was taken at each visit for immunologic analysis.
-Questionnaires were used to collect relevant data on demographics, health status, and overall
-experiences. Questionnaires were completed in-person or via phone.
+**Recruitment, Screening, and Enrollment**
 
-## Schematic of workflow
+The study participants were be recruited through community TST surveys and HIV/TB Care Clinics in the catchment area. The enrollment into the study involved a 2-step process of screening then enrollment (Figure 1).
 
-Sometimes you might want to show a schematic diagram/figure that was not created with code (if you can do it with code, do it). @fig-schematic is an example of some - completely random/unrelated - schematic that was generated with Biorender. We store those figures in the `assets` folder.
-
-```{r}
-#| label: fig-schematic
-#| fig-cap: "A figure that is manually generated and shows some overview/schematic. This has nothing to do with the data, it's just a random one from one of our projects I found and placed here."
-#| echo: FALSE
-#knitr::include_graphics(here("products","assets","antigen-recognition.png"))
-```
+A separate consent form was signed for each step in this process. After signing an informed consent for screening, prospective participant completed a short questionnaire to determine exclusionary criteria. Those that met any exclusionary criteria were referred to the local health care system, whereas the remaining individuals proceeded with screening. Among those not excluded, a baseline blood sample was taken for testing with an IGRA. Only after taking the blood sample, a TST was placed and read by the field team between 48 and 72 hours later. Those screened with a TST \< 5 mm continued in the study, whereas those with TST ≥ 5 mm were referred to the local health care system for further TB risk evaluation and TB preventive therapy (TPT) as indicated. Participants with a TST \< 5 mm and negative IGRA met all study criteria continued in the study (Figure 1) for the duration of follow-up. Follow-up evaluations were performed quarterly up to 18 months. During these visits, field workers measured current exposure risk to M. tuberculosis, signs and symptoms of active TB disease. At each visit, blood samples was taken at each visit for immunologic analysis. Questionnaires were used to collect relevant data on demographics, health status, and overall experiences. Questionnaires were completed in-person or via phone.
 
 ## Data aquisition
 
@@ -114,8 +87,8 @@ Sometimes you might want to show a schematic diagram/figure that was not created
 # Results
 
 ## Exploratory/Descriptive analysis
-Data analysis was conducted using R Studio version RStudio 2023.09.1. Descriptive statistics (frequencies, mean, standard deviation (SD), median, interquartile range (IQR), and proportions) were used to present the baseline characteristics of participants.
-we used histograms, bar graphs, and box plots, to show how data was distributed.We did cross tabulation between the covariates and the outcome.
+
+Data analysis was conducted using R Studio version RStudio 2023.09.1. Descriptive statistics (frequencies, mean, standard deviation (SD), median, interquartile range (IQR), and proportions) were used to present the baseline characteristics of participants. we used histograms, bar graphs, and box plots, to show how data was distributed.We did cross tabulation between the covariates and the outcome.
 
 ```{r}
 #| label: tbl-summarytable
@@ -126,17 +99,6 @@ knitr::kable(resulttable)
 ```
 
 ## Basic statistical analysis
-
-*To get some further insight into your data, if reasonable you could compute simple statistics (e.g. simple models with 1 predictor) to look for associations between your outcome(s) and each individual predictor variable. Though note that unless you pre-specified the outcome and main exposure, any "p\<0.05 means statistical significance" interpretation is not valid.*
-
-@fig-result shows a scatterplot figure produced by one of the R scripts.
-
-```{r}
-#| label: fig-result
-#| fig-cap: "Height and weight stratified by gender."
-#| echo: FALSE
-#knitr::include_graphics(here("results","height-weight-stratified.png"))
-```
 
 ## Full analysis
 
@@ -169,11 +131,6 @@ Example @tbl-resulttable2 shows a summary of a linear model fit.
 *What are the main take-home messages?*
 
 *Include citations in your Rmd file using bibtex, the list of references will automatically be placed at the end*
-
-This paper [@leek2015] discusses types of analyses.
-
-These papers [@mckay2020; @mckay2020a] are good examples of papers published using a fully reproducible setup similar to the one shown in this template.
-
 
 {{< pagebreak >}}
 
