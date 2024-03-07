@@ -8,8 +8,8 @@ format:
     toc: false
     number-sections: true
     highlight-style: github
-bibliography: ../assets/dataanalysis-references.bib
-csl: ../assets/apa.csl
+bibliography: ../../assets/dataanalysis-references.bib
+csl: ../../assets/apa.csl
 ---
 
 ```{r, echo=FALSE, message=FALSE}
@@ -26,7 +26,7 @@ library(knitr)
 
 # Introduction
 
-The global burden of tuberculosis (TB) is high and it is the world's second leading cause of death from a single infectious agent, after coronavirus disease\@WHO2023. It reached its peak in 2000 and has since declined by a modest 1.5% annually, falling short of the Millennial Development Goals for TB elimination by 2035. Despite efforts carried out it's still a challenge, one-quarter of the world's population is infected with Latent TB(LTBI)@Houben2016. Uganda is one of the highest sub-Saharan countries with a prevalence of TB 764/100,000 persons in the past two years\@WHO2023. It is not feasible to treat all individuals with LTBI, so strategies have been developed to identify factors associated with LTBI and they should be identified and dealt with to reduce the risk for progressing to TB disease. Currently, Uganda's goal is the identify TB cases and provide treatment but does not track LTBI in the community hence remaining a big burden to the country\@Alcover2022@Felix\@Muyindike. In the broader context of TB research, a growing body of literature explores various risk factors influencing the progression from LTBI to active disease\@Yap2018. The aim is to assess the association between alcohol consumption and the risk of developing LTBI. As global drug use and alcohol consumption have increased and TB remains important, understanding the risk between these two factors holds major implications for public health strategies and interventions\@Nwana2019.
+The global burden of tuberculosis (TB) is high and it is the world's second leading cause of death from a single infectious agent, after coronavirus disease. It reached its peak in 2000 and has since declined by a modest 1.5% annually, falling short of the Millennial Development Goals for TB elimination by 2035. Despite efforts carried out it's still a challenge, one-quarter of the world's population is infected with Latent TB(LTBI). Uganda is one of the highest sub-Saharan countries with a prevalence of TB 764/100,000 persons in the past two years. It is not feasible to treat all individuals with LTBI, so strategies have been developed to identify factors associated with LTBI and they should be identified and dealt with to reduce the risk for progressing to TB disease. Currently, Uganda's goal is the identify TB cases and provide treatment but does not track LTBI in the community hence remaining a big burden to the country. In the broader context of TB research, a growing body of literature explores various risk factors influencing the progression from LTBI to active disease. The aim is to assess the association between alcohol consumption and the risk of developing LTBI. As global drug use and alcohol consumption have increased and TB remains important, understanding the risk between these two factors holds major implications for public health strategies and interventions.
 
 ## General Background Information
 
@@ -58,13 +58,13 @@ The study was conducted in the Kawempe and Rubaga Divisions of Kampala, and cont
 
 ### Inclusion
 
-No evidence of Mtb infection TST \< 5 mm QFT negative Asymptomatic for symptoms of active TB
+No evidence of Mtb infection TST < 5 mm QFT negative Asymptomatic for symptoms of active TB
 
 ### Exclusion
 
-Children, residents \< 15 years Active or subclinical TB Previously treated for TB Previously treated for LTBI and Immunosuppresive medication
+Children, residents < 15 years Active or subclinical TB Previously treated for TB Previously treated for LTBI and Immunosuppresive medication
 
-**Recruitment, Screening, and Enrollment**
+##Recruitment, Screening, and Enrollment
 
 The study participants were be recruited through community TST surveys and HIV/TB Care Clinics in the catchment area. The enrollment into the study involved a 2-step process of screening then enrollment (Figure 1).
 
@@ -72,11 +72,12 @@ A separate consent form was signed for each step in this process. After signing 
 
 ## Data aquisition
 
-*As applicable, explain where and how you got the data. If you directly import the data from an online source, you can combine this section with the next.*
+Data acquisition for this study involves the utilization of electronic questionnaires administered to participants as part of an ongoing cohort study in Uganda to access incidence of Tuberculosis Infection among adults. Permission was obtained from the Principal Investigator overseeing the study to access the data. The dataset was deidentified by the data manager to protect the privacy of participants, after which access was provided for analysis. 
+
 
 ## Data import and cleaning
 
-*Write code that reads in the file and cleans it so it's ready for analysis. Since this will be fairly long code for most datasets, it might be a good idea to have it in one or several R scripts. If that is the case, explain here briefly what kind of cleaning/processing you do, and provide more details and well documented code somewhere (e.g. as supplement in a paper). All materials, including files that contain code, should be commented well so everyone can follow along.*
+The data preprocessing procedures were conducted to prepare the datasets for subsequent analysis in accordance with established scientific practices. Initially, two datasets were imported into the analysis environment. Duplicates within the one dataset were identified and subsequently removed based on participant ID, ensuring data integrity. The resulting unique entries were merged with the second dataset utilizing. From the merged dataset, pertinent variables, including sex, age, HIV status, and enrollment dates, were selected to construct the final dataset. To enhance interpretability, column names in final dataset were refined, and variables were appropriately converted to their respective data types. Numeric transformation was applied to age values, while categorical variables such as sex, LTBI status, alcohol consumption, and HIV status were converted into factors. Furthermore, the dates pertaining to enrollment and TB conversion of participants were reformatted into the standardized date format. 
 
 ## Statistical analysis
 
